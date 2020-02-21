@@ -66,3 +66,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### `npm run electron-dev`
+
+Start ReactJS, ExpressJS & ElectronJS
+
+### `npm run electron-pack`
+
+Package the App
