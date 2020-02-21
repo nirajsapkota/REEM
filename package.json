@@ -37,10 +37,11 @@
   },
   "devDependencies": {
     "@rescripts/cli": "0.0.13",
-    "@rescripts/rescript-env": "0.0.11", 
+    "@rescripts/rescript-env": "0.0.11",
     "concurrently": "^5.1.0",
     "electron": "^8.0.1",
     "electron-builder": "^22.3.2",
+    "nodemon": "^2.0.2",
     "typescript": "^3.8.2",
     "wait-on": "^4.0.0"
   },
@@ -51,7 +52,7 @@
     "build": "rescripts build",
     "test": "rescripts test",
     "eject": "react-scripts eject",
-    "electron-dev": "concurrently \"BROWSER=none npm start\" \"node express.js\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-dev": "concurrently \"BROWSER=none npm start\" \"nodemon express.js\" \"wait-on http://localhost:3000 && electron .\"",
     "postinstall": "electron-builder install-app-deps",
     "preelectron-pack": "npm run build",
     "electron-pack": "electron-builder build -mw"
